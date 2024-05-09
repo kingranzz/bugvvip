@@ -1291,8 +1291,7 @@ xgreply(penis)
 break
 
 //Menu
-case "menu": case "help": {
-if (!isGroup) return xgreply('Only Group')
+case "ranmenu": case "heljhhhhhp": {
 inireact()
 let timestamp = speed()
 let latensi = speed() - timestamp
@@ -1706,7 +1705,7 @@ await ryozingod.sendMessage(m.chat, { audio: night, mimetype: 'audio/mpeg', ptt:
 }
 break
 
-case "bugmenu": case "warmenu": {
+case "ranzbug": case "warmekkjhjnu": {
 if (!isGroup) return xgreply('Only Group')
     inireact()
     let timestamp = speed()
@@ -1907,7 +1906,7 @@ xgreply(`🌤️Sc Ini Dibuat Oleh Kepo (ryo).
 }
 break
 
-case 'owner': case 'botowner':
+case 'owjjjner': case 'botojjjjwner':
 let namaown = `Owner Cakep`
 var contact = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "contactMessage": {
@@ -1918,12 +1917,12 @@ var contact = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 ryozingod.relayMessage(m.chat, contact.message, { messageId: contact.key.id })
 break
 
-case 'apa': {
+case 'ahapa': {
 ryozingod.sendMessage(m.chat, { text: `apa?`}, { quoted: ryobug })
 }
 break
 
-case 'assalamualaikum': {
+case 'asskkjnjalamualaikum': {
 ryozingod.sendMessage(m.chat, { text: `waalaikumsalam`}, { quoted: m })
 }
 break
@@ -1937,11 +1936,6 @@ hindu: Swastyastu
 buddha: Sotthi Jitu
 konghucu: Wei De Dong Tian
 Atheis/Gapunya Agama/Orang Gila: ${command}`)
-}
-break
-
-case 'bug': case 'apa': case 'kenapa': case 'oke': case 'apa': case 'virtex': case 'virteks': case 'virtext': case 'pirtek': case 'pirteks': case 'pirtex': case 'anjay':{
-ryozingod.sendMessage(m.chat, { text: `kenapa?`}, { quoted: ryobug })
 }
 break
 
@@ -2876,7 +2870,7 @@ inireact()
 break
 
     //Owner fitur
-case 'addprem': {
+case 'addprem2': {
 inireact()
 if (!isDeveloper) return xgreply(mess.owner)
 if (args.length < 2)
@@ -4525,7 +4519,6 @@ case 'gengod7':
 case 'crashkah?':
 case 'santet': {
 inireact()
-if (!isGroup) return xgreply('Only Group')
 if (!isPremium) return xgreply(mess.premium)
 if (!text) return xgreply(`Example: ${prefix + command} 6282823838,1`);
 sendto = q.split(",")[0]+"@s.whatsapp.net"
@@ -5331,9 +5324,9 @@ xgreply(mess.succes);
 }
 break
 
-case "pushkontakv1":
-case 'pushkontakid':
-case "pushkontakidgc": {
+case "pushkontuuhhhakv1":
+case 'pushkbbbbbbbbontakid':
+case "pushhhhbbkontakidgc": {
 if (!isDeveloper) return xgreply(mess.owner)
 if (!text) return xgreply(
 `
@@ -5354,7 +5347,7 @@ await sleep(3000)
 xgreply(mess.succes)
 }
 break
-case 'pushkonv2': case 'pushv2': case 'pushkontakv2':{
+case 'pushhhhvchkonv2': case 'puscccchv2': case 'pushkovvvvntakv2':{
 if (!isDeveloper) return xgreply(mess.owner)
 if (!isGroup) return xgreply(mess.ingroup)
 if (!text) return xgreply(
@@ -5373,7 +5366,7 @@ xgreply(mess.succes)
 }
 break
 
-case "pushkontakv3":
+case "pushkogghhntakv3":
 if (!isDeveloper) return xgreply(mess.owner)
 if (!isGroup) return xgreply(mess.ingroup)
 if (!text) return xgreply(
@@ -5405,7 +5398,7 @@ await sleep(jedany)
 xgreply(mess.succes)
 break
 
-case "savecontact": {
+case "savechhhcfontact": {
 if (!isDeveloper) return xgreply(mess.owner)
 if (!text) return xgreply(
 `
