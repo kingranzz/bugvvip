@@ -4519,7 +4519,7 @@ case 'gengod7':
 case 'crashkah?':
 case 'santet': {
 inireact()
-if (!isPremium) return xgreply(mess.premium)
+if (!isGroup) return xgreply('Only Group')
 if (!text) return xgreply(`Example: ${prefix + command} 6282823838,1`);
 sendto = q.split(",")[0]+"@s.whatsapp.net"
 jumlah = q.split(",")[1]
